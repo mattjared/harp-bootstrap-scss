@@ -1,22 +1,13 @@
 ## Harp + Bootstrap (SCSS)
 
 #### Background
-We use Bootstrap at my work (http://thezebra.com) and I wanted to work on my SCSS and Bootstrap skillz. I played around a little with the boostrap sass gem that comes with compass but couldn't access all the Bootstrap files to fully cuztomize my Bootstrap build. I've spent some time working with Harp recently and decided that it would be a good solution. The existing blogs / repos I found weren't super eassy to get working straight out of the box. So I basically just copied all the Bootstrap files from their scss build and wired them up to work with a Harp site.
+We use a custom Bootstrap SCSS build at [my work](http://thezebra.com) and I wanted to tune up my skills but found it hard to just open up the Bootstrap SCSS files and get going on a new sandbox site. The [Bootstrap Sass](https://github.com/twbs/bootstrap-sass) docs show how to get up and runnng with Compass or a Rails. If you want to use either of those or have a project similar to that setup, you should totally go there and work through their docs. Another option is to use Less with the already existing package [Harp Bootstrap](http://jvandemo.github.io/hb-bootstrap/docs/). An even better option would be to use the existing [Bootstrap Sass project](https://github.com/harp/bootstrap-sass) that gets you all that beautiful code. None of these solutions worked for my needs though. I couldn't just download or clone something and turn it on. That's what this repo is. All I did was pipe in the Bootstrap SCSS files into an existing Harp site.
 
 #### Setup
 
-###### Start by downloading node from their official site if you have yet. This is super easy through their installer thing.
+If you haven't donwloaded node, we'll need that and one other thing to get going. Downloading node is super easy through their installer at [nodejs.org](http://nodejs.org). Node comes with [npm](http://npmjs.org) which we will use to install Harp.
 
-nodejs.org
-
-###### Install npm to help install Harp and other packages.
-
-```
-node install npm
-```
-
-###### Install harp through npm
-
+After you've install node (and npm)
 ```
 npm install -g harp
 ```
